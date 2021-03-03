@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style> 
+        .navbar {
+            margin-bottom: 0;
+            background-color:red;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }      
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        .jumbotron { 
+            background-color: #f4511e; 
+            color:blueviolet;
+        }
+        h1.title{
+            text-align: center;
+            color: maroon;
+        }
+        div.form-group.form-text{
+            color: aqua;
+        }
+        #myPage{
+            background-color:white;
+        }
+        p1{
+            color:red;
+        }
+        p2{
+            color:red;
+        }
+        .FormBackground {
+	        background-color:yellow;
+        }
+        .HeadBackground {
+	        background-color:aqua;
+        }
+        h1{
+            font-size: 30px;
+        }
+        .slideanim {visibility:hidden;}
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 3s;
+            -webkit-animation-duration: 3s;
+            visibility: visible;
+        }
+        @keyframes slide {
+            0% {
+            opacity: 0;
+            transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            transform: translateY(0%);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+            } 
+            100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Akhir PemWeb API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!--<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyA5NAJKjeHdUJJqhfCEtaSQByl7pjPtNyQ",
+        authDomain: "pemweb-204401.firebaseapp.com",
+        databaseURL: "https://pemweb-204401.firebaseio.com",
+        projectId: "pemweb-204401",
+        storageBucket: "",
+        messagingSenderId: "1030274921880"
+    };
+    firebase.initializeApp(config);
+    </script>
+    -->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#myPage">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SEARCH</a></li>
+                <li><a href="#lyric">LYRIC</a></li>
+                <li><a href="#news">NEWS</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div style="margin-top: 50px;">
+        <section class="HeadBackground">
+            <div class="text-center">
+                <br>
+                <br>
+                <h1>MusixMatch X NewYorkTimes</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="container-fluid text-center">
+                    <a href="#about" title="To Down">
+                      <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+            </footer>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+            <div id="about" class="container-fluid">
+                <div id="myCarousel" class="carousel slide slideanim" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="mw-100" src="Musixmatch.jpg">
+                        </div>
+                    
+                        <div class="item">
+                            <img class="mw-100" src="NYTimes.jpg">
+                        </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <section class="FormBackground">
+                <br>
+                <br>
+                <div id="services" class="container-fluid">
+                <div class="form-inline text-center">
+                    <div class="input-group slideanim">
+                        <input type="text" class="form-control" id="song" size = "100" placeholder="Enter song title"/>
+                        <p1 hidden>Please fill this field</p1>
+                    </div>
+                </div>
+                <br>
+                <div class="form-inline text-center">
+                    <div class="input-group slideanim">
+                        <input type="text" class="form-control" id="singer" size = "100" placeholder="Enter singer name"/>
+                        <p2 hidden>Please fill this field</p2>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                <input type="submit" class="btn btn-success btn-lg" id="submit"/>
+                </div>
+            </div>
+            </section>
+        <br>
+        <div class="container">
+            <div id="lyric" class="container-fluid">
+                <div class="row slideanim" id="lyrics_result">
+                <p3>
+                    <div class="jumbotron text-center">
+                        <h2><b>Lyrics</b></h2>
+                        <hr>
+                        <h3>Your Music Lyric will be found here</h3>
+                    </div>
+                </p3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div id="news" class="container-fluid">
+                    <div class="row slideanim" id="news_result">
+                    <p3>
+                    <div class="jumbotron text-center">
+                        <h2><b>News</b></h2>
+                        <hr>
+                        <h3>Your News Will be Found Here</h3>
+                    </div>
+                    </p3>
+                    </div>
+                </div>
+            </div>
+    </div>                        
+    <script src="./jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script id="hidden-template" type="text/x-custom-template">
+        <div class="backstage">
+        <div class="col-sm-12">
+            <div class="jumbotron text-center">
+                <div class="card text-center">
+                    <div class="card-header">
+                            <h2><b>Lyrics</b></h2>
+                    </div>
+                    <div class="jumbotron text-center">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <h5 class="card-title"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </script>
+
+    <script id="hidden-template-news" type="text/x-custom-template">
+        <div class="col-sm-12">
+            <div class="jumbotron text-center">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2><b>Latest Article</b></h2>
+                    </div>
+                        <div class="jumbotron text-align-left">
+                            <div class="card-body">
+                            <h3 class="card-title"></h3>
+                            <a href="#" target="_blank" class="btn btn-block btn-primary btn-view">View</a>
+                            <img class="mw-100" src="http://static01.nytimes.com/packages/images/developer/logos/poweredby_nytimes_200a.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="hidden-template-news1" type="text/x-custom-template">
+        <div class="col-sm-12">
+            <div class="jumbotron text-center">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2><b>Latest Article</b></h2>
+                    </div>
+                        <div class="jumbotron text-align-left">
+                            <div class="card-body">
+                            <h3 class="card-title"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script>
+        var apiKey = 'd74292379becd77697aa6d00a326b4f3';
+        var apiKey2 = 'b0c1c106bfd84cd092dd2bfb22501664';
+        var proxyUrl = 'https://cors.now.sh/';
+        var baseUrl = 'http://api.musixmatch.com/ws/1.1/matcher.lyrics.get?';
+        var baseUrl2 = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+        var start = 0;
+        $(document).ready(function () {
+            $(window).scroll(function() {
+            $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+                });
+            });
+            $("#submit").click(function () {
+                var lyricSearch = $("#song").val();
+                var singerSearch = $("#singer").val();
+                var articleSearch = $("#singer").val();
+                if(lyricSearch != "" && singerSearch == "" && articleSearch == ""){
+                    $("p1").hide();
+                    $("p2").show();
+                }
+                else if(lyricSearch == "" && singerSearch != "" && articleSearch != ""){
+                    $("p1").show();
+                    $("p2").hide();
+                }
+                else if(lyricSearch == "" && singerSearch == "" && articleSearch == ""){
+                    $("p1").show();
+                    $("p2").show();
+                }
+                else{
+                    $("p1").hide();
+                    $("p2").hide();
+                    $("p3").hide();
+                    var q_track = jQuery.param({
+                        q_track: lyricSearch
+                    });
+                    var q_artist = jQuery.param({
+                        q_artist: singerSearch
+                    });
+                    var url = proxyUrl + baseUrl +  q_track + '&' + q_artist +  '&apikey=' + apiKey;
+                    fetch('https://cors.now.sh/http://xkcd.com/info.0.json')
+                    .then(console.log)
+                    .catch(console.error)
+                    $.ajax({
+                        data: {
+                            apikey:"d74292379becd77697aa6d00a326b4f3",
+                            q_track: lyricSearch,
+                            q_artist: singerSearch,
+                            format:"jsonp",
+                            callback:"jsonp_callback"
+                        },
+                        url: url,
+                        dataType: "jsonp",
+                        jsonpCallback: 'jsonp_callback',
+                        contentType: 'application/json'
+                    }).then(function (data) {
+                        console.log(data);
+                        if(data.message.header.status_code == 404) {
+                            var template = $('#hidden-template').html();
+                            var item = $(template).clone();
+                            $(item).find('.card-text').html("Sorry we couldn't find your lyric :(");
+                            $("#lyrics_result").append(item);
+                        }
+                        else {
+                            var track = data.message.body.lyrics;
+                            console.log(track.lyrics_body);
+                            var template = $('#hidden-template').html();
+                            var item = $(template).clone();
+                            $(item).find('.card-text').html(track.lyrics_body);
+                            $("#lyrics_result").append(item);
+                            console.log(track.lyrics_body);
+                        }
+                    });
+                    baseUrl2 += '?' + $.param({
+                    'api-key': 'b0c1c106bfd84cd092dd2bfb22501664',
+                    'q': singerSearch,
+                    'begin_date': "20180501",
+                    'page': 0
+                    });
+                    $.ajax({
+                        url: baseUrl2,
+                        method: 'GET',
+                        format:"jsonp",
+                        callback:"jsonp_callback"
+                    }).done(function(result) {
+                    console.log(result);
+                    console.log(result.response.docs);
+                    if(result.response.docs.length == 0) {
+                        var template = $('#hidden-template-news1').html();   
+                        var item = $(template).clone();
+                        $(item).find('.card-title').html("Sorry, we couldn't find your article");
+                        $("#news_result").append(item);
+                    }
+                    else {
+                        for(var i = 0; i < 2; i++)
+                        {
+                            console.log(result.response.docs[i].web_url);
+                            var template = $('#hidden-template-news').html();   
+                            var item = $(template).clone();
+                            $(item).find('.card-title').html(result.response.docs[i].snippet);
+                            $(item).find('.btn-view').attr('href', result.response.docs[i].web_url);
+                            $("#news_result").append(item);
+                        }
+                    }
+                    });
+                }
+            });           
+        });
+    </script>
+</body>
+
+</html>
